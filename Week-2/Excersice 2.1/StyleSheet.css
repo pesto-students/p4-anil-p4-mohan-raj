@@ -3,7 +3,8 @@
     padding: 0;
     font-family: 'Lato', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    --primary-color: #475569;
+    --primary-color: #4800ffff;
+    --secondary-color: #faebd7;
 }
 
 .container-body
@@ -39,7 +40,7 @@
     background-color: var(--primary-color);
     border-bottom-left-radius: 41px;
     border-bottom-right-radius: 41px;
-    color: ;
+    color: white;
 }
 
 .container-header h1 {
@@ -57,4 +58,18 @@
 .container-form h2 {
     text-align: center;
     padding: 20px;
+}
+
+.container-footer {
+    height: 100px;
+    background-color: var(--dark-gray);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 20px;
+    border-top-left-radius: 41px;
+    border-top-right-radius: 41px;
+}
+
+.container-footer h2 {
+    margin-bottom: 20px;
 }
