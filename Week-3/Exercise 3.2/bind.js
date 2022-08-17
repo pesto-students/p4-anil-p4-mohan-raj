@@ -1,16 +1,16 @@
 // Bind method example
 
-const chocolates = {
-    cadbury: 'Silk',
-    nestle: 'Kit kat',
-    lindt: 'Dark chocolate',
-    printChoco: function () {
-        console.log( this.lindt +` is better than ` + this.nestle + ` and ` + this.cadbury)
+const bikes = {
+    make: 'Royal Enfield',
+    model: 'Classic',
+    capacity: '350',
+    printBikes: function () {
+        console.log( this.make +` model : ` + this.model + ` CC: ` + this.capacity)
     }
 }
 
-let fn = chocolates.printChoco; 
-fn(); // undefined is better than undefined and undefined
+let fn = bikes.printBikes; 
+fn(); // undefined model : undefined CC: undefined
 
-fn = chocolates.printChoco.bind(chocolates);
-fn(); // Dark chocolate is better than Kit kat and Silk
+fn = bikes.printBikes.bind(bikes);
+fn(); // Royal Enfield model : Classic CC: 350
