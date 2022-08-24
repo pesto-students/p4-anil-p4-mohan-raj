@@ -1,5 +1,3 @@
-// Ex 3.4
-
 function createStack() {
     var items = [];
     function push(val) {
